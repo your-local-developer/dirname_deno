@@ -2,18 +2,18 @@
   "$schema": "https://x.nest.land/eggs@0.3.10/src/schema.json",
   "name": "dirname_deno",
   "entry": "./mod.ts",
-  "description": "A implementation of Node's __dirname and __filename for Deno",
+  "description": "An implementation of Node's __dirname and __filename for Deno",
   "homepage": "https://github.com/your-local-developer/dirname_deno",
   "version": "0.1.0",
   "releaseType": "minor",
   "unstable": false,
   "unlisted": false,
   "files": [
-    "mod.ts",
     "depts.ts",
     "LICENSE",
     "types.ts",
-    "src"
+    "README.md",
+    "src/*"
   ],
   "ignore": [
     ".git",
