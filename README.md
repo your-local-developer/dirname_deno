@@ -13,7 +13,7 @@
 ```ts
 /* main.ts */
 
-import { fromMeta, getDirname, getFilename } from "./depts.ts";
+import { fromMeta } from "https://x.nest.land/dirname_deno@0.2.0/mod.ts";
 
 const { __dirname, __filename } = fromMeta(import.meta);
 
@@ -26,7 +26,7 @@ console.log(__filename); // /home/you/projects/project/src/main.ts
 ```ts
 /* main.ts */
 
-import { getDirname, getFilename } from "./depts.ts";
+import { getDirname, getFilename } from "https://x.nest.land/dirname_deno@0.2.0/mod.ts";
 
 const dirname = getDirname(import.meta);
 console.log(dirname); // /home/you/projects/project/src
