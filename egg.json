@@ -8,20 +8,6 @@
   "releaseType": "minor",
   "unstable": false,
   "unlisted": false,
-  "files": [
-    "depts.ts",
-    "LICENSE",
-    "types.ts",
-    "README.md",
-    "src/*"
-  ],
-  "ignore": [
-    ".git",
-    ".vscode",
-    "test_depts.ts",
-    "test",
-    ".gitignore"
-  ],
   "checkFormat": true,
   "checkTests": true,
   "checkInstallation": true,
