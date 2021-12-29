@@ -2,28 +2,33 @@ import { fromFileUrl } from "../depts.ts";
 import { dirname } from "../depts.ts";
 import { FilePathInfo } from "../types.ts";
 
-function _getDirname(url: string): string {
+function resolveDirname(url: string): string {
   return dirname(fromFileUrl(url));
 }
 
-function _getFilename(url: string): string {
+function resolveFilename(url: string): string {
   return fromFileUrl(url);
 }
 
+/**
+ * 
+ * @param meta 
+ * @returns 
+ */
 export function fromMeta(
   meta: ImportMeta,
 ): FilePathInfo {
   const url = meta.url;
-  const __dirname = _getDirname(url);
-  const __filename = _getFilename(url);
+  const __dirname = resolveDirname(url);
+  const __filename = resolveFilename(url);
 
   return { __dirname, __filename };
 }
 
 export function getDirname(meta: ImportMeta): string {
-  return _getDirname(meta.url);
+  return resolveDirname(meta.url);
 }
 
 export function getFilename(meta: ImportMeta): string {
-  return _getFilename(meta.url);
+  return resolveFilename(meta.url);
 }
