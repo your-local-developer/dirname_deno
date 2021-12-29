@@ -19,7 +19,8 @@
     ".git",
     ".vscode",
     "test_depts.ts",
-    "test"
+    "test",
+    ".gitignore"
   ],
   "checkFormat": true,
   "checkTests": true,
