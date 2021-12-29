@@ -4,5 +4,13 @@
   "deno.suggest.imports.hosts": {
     "https://deno.land": true,
     "https://x.nest.land": true
-  }
+  },
+  "spellright.language": [
+    "en_GB"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
 }
