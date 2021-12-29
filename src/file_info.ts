@@ -11,9 +11,13 @@ function resolveFilename(url: string): string {
 }
 
 /**
- * 
- * @param meta 
- * @returns 
+ * Creates constants for the dirname and filename of your file.
+ *
+ * @since 0.1.0
+ * @author your-local-developer <https://github.com/your-local-developer>
+ * @example ```ts
+ * const { __dirname, __filename } = fromMeta(import.meta);
+ * ```
  */
 export function fromMeta(
   meta: ImportMeta,
@@ -25,10 +29,28 @@ export function fromMeta(
   return { __dirname, __filename };
 }
 
+/**
+ * Gets the dirname of your file.
+ *
+ * @since 0.1.0
+ * @author your-local-developer <https://github.com/your-local-developer>
+ * @example ```ts
+ * const dirname = getDirname(import.meta);
+ * ```
+ */
 export function getDirname(meta: ImportMeta): string {
   return resolveDirname(meta.url);
 }
 
+/**
+ * Gets the filename of your file.
+ *
+ * @since 0.1.0
+ * @author your-local-developer <https://github.com/your-local-developer>
+ * @example ```ts
+ * const filename = getFilename(import.meta);
+ * ```
+ */
 export function getFilename(meta: ImportMeta): string {
   return resolveFilename(meta.url);
 }
