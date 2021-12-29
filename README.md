@@ -4,31 +4,29 @@
 
 ### Get the current dirname and filename:
 
-Examples with path: */home/you/projects/project/src/main.ts*
-
-Dirname: */home/you/projects/project/src*
-
-Filename: */home/you/projects/project/src/main.ts*
-
 #### Method 1
 
 ```ts
+/* main.ts */
+
 import { fromMeta, getDirname, getFilename } from "./depts.ts";
 
 const { __dirname, __filename } = fromMeta(import.meta);
 
-console.log(__dirname);
-console.log(__filename);
+console.log(__dirname); // /home/you/projects/project/src
+console.log(__filename); // /home/you/projects/project/src/main.ts
 ```
 
 #### Method 2
 
 ```ts
+/* main.ts */
+
 import { getDirname, getFilename } from "./depts.ts";
 
-const filename = getFilename(import.meta);
-console.log(filename);
-
 const dirname = getDirname(import.meta);
-console.log(dirname);
+console.log(dirname); // /home/you/projects/project/src
+
+const filename = getFilename(import.meta);
+console.log(filename); // /home/you/projects/project/src/main.ts
 ```
