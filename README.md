@@ -1,6 +1,7 @@
 <div align="center">
   <h1 align="center">dirname_deno</h1>
-  <p align="center"><a href="https://nest.land/package/dirname_deno"><img src="https://nest.land/badge-large.svg" alt="nest.land"></a></p>
+  <a align="center" href="https://nest.land/package/dirname_deno"><img src="https://nest.land/badge.svg" alt="nest.land"></a>
+  <a align="center" href="https://doc.deno.land/https/deno.land/x/dirname_deno/mod.ts"><img src="https://doc.deno.land/badge.svg" alt="deno doc"></a>
   <p align="center">An implementation of Node's __dirname and __filename for Deno</p>
 </div>
 
