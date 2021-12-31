@@ -1,5 +1,5 @@
 import { fromMeta, getDirname, getFilename } from "../mod.ts";
-import { assertEquals, bold, cyan, underline } from "../test_depts.ts";
+import { assertEquals, bold, cyan, underline } from "../test_deps.ts";
 
 Deno.test("dirname via fromMeta", () => {
   const { __dirname } = fromMeta(import.meta);

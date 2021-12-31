@@ -1,5 +1,5 @@
-import { fromFileUrl } from "../depts.ts";
-import { dirname } from "../depts.ts";
+import { fromFileUrl } from "../deps.ts";
+import { dirname } from "../deps.ts";
 import { FilePathInfo } from "../types.ts";
 
 function resolveDirname(url: string): string {
