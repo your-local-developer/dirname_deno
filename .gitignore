@@ -1,0 +1,4 @@
+eggs-debug.log
+.idea/**
+/**/cov/**
+.vscode/**
