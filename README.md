@@ -27,7 +27,10 @@ console.log(__filename); // /home/you/projects/project/src/main.ts
 ```ts
 /* main.ts */
 
-import { getDirname, getFilename } from "https://x.nest.land/dirname_deno@0.2.0/mod.ts";
+import {
+  getDirname,
+  getFilename,
+} from "https://x.nest.land/dirname_deno@0.2.0/mod.ts";
 
 const dirname = getDirname(import.meta);
 console.log(dirname); // /home/you/projects/project/src
