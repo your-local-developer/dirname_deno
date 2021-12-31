@@ -4,12 +4,13 @@
   "entry": "./mod.ts",
   "description": "An implementation of Node's __dirname and __filename for Deno",
   "homepage": "https://github.com/your-local-developer/dirname_deno",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "releaseType": "minor",
   "unstable": false,
   "unlisted": false,
   "checkFormat": true,
   "checkTests": true,
   "checkInstallation": true,
-  "check": true
+  "check": true,
+  "ignore": []
 }
