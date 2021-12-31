@@ -14,7 +14,8 @@
 ```ts
 /* main.ts */
 
-import { fromMeta } from "https://x.nest.land/dirname_deno@0.2.0/mod.ts";
+import { fromMeta } from "https://x.nest.land/dirname_deno@0.3.0/mod.ts";
+// or from "https://deno.land/x/dirname_deno@v0.3.0/mod.ts"
 
 const { __dirname, __filename } = fromMeta(import.meta);
 
@@ -30,7 +31,8 @@ console.log(__filename); // /home/you/projects/project/src/main.ts
 import {
   getDirname,
   getFilename,
-} from "https://x.nest.land/dirname_deno@0.2.0/mod.ts";
+} from "https://x.nest.land/dirname_deno@0.3.0/mod.ts";
+// or from "https://deno.land/x/dirname_deno@v0.3.0/mod.ts"
 
 const dirname = getDirname(import.meta);
 console.log(dirname); // /home/you/projects/project/src
